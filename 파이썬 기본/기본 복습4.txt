@@ -1,0 +1,95 @@
+1번 모듈 
+
+# 모듈
+
+# 일반 가격
+def price(people):
+    print("{0}명 가격은 {1}원 입니다.".format(people, people * 10000))
+
+
+# 조조 할인 가격
+def price_morning(people):
+    print("{0}명 조조 할인 가격은 {1}원 입니다.".format(people, people * 6000))
+
+
+# 군인 할인 가격
+def price_soldier(people):
+    print("{0}명 군인 할은 가격은 {1}원 입니다.".format(people, people * 4000))
+
+
+
+# import theater_module
+# theater_module.price(3)  # 3명 이서 영화보러 갔을 때 가격
+# theater_module.price_morning(4)  # 4명이서 조조 할인 영화 보러 갔을 때
+# theater_module.price_soldier(5)  # 5명의 군인이 영화 보러 갔을 때
+
+# import theater_module as mv  # as 뒤는 명칭을 붙일 수 있는 것
+
+# mv.price(3)
+# mv.price_morning(4)
+# mv.price_soldier(5)
+
+
+# from theater_module import *
+# from random import * 이랑 같은 느낌
+
+# price(3)
+# price_morning(4)
+# price_soldier(5)
+
+# from theater_module import price, price_morning
+
+# 필요한 함수만 가져다 쓰기
+
+# price(5)
+# price_morning(6)
+# price_soldier(7)
+
+
+from theater_module import price_soldier as price
+
+price(5)
+
+2번 패키지 - 모듈을 모아둔 집합 , __all__
+
+## viethnam package
+class VietnamePacage:
+    def detail(self):
+        print("[베트남 패키지 3박 5일] 다낭 효도 여행 60만원")
+## thailandpackage
+class ThailandPackage:
+    def detail(self):
+        print("[태국 패키지 3박 5일] 방콕, 파타야 여행 (야시장 투어) 50만원")
+
+
+
+import travel.thailand
+
+trip_to = travel.thailand.ThailandPackage()
+trip_to.detail()
+
+from travel.thailand import ThailandPackage
+
+trip_to = ThailandPackage()
+trip_to.detail()
+
+from travel import vietnam
+
+trip_to = vietnam.VietnamePacage()
+trip_to.detail()
+
+## init 사용한것
+
+# from random import *
+from travel import *
+
+# * 사용시 공개 범위를 설정해주어야 한다.
+
+# trip_to = vietnam.VietnamePacage()
+trip_to = thailand.ThailandPackage()
+trip_to.detail()
+
+
+## __init__
+
+__all__ = ["vietnam", "thailand"]
