@@ -21,13 +21,15 @@
 # for item in [5,6,7,8,9,10]:
 #     print(item)
 
-for item in range(5,10): # index 5부터 9까지의 숫자만큼 불러온다
-    print('i love you')
+# for item in range(5,10): # index 5부터 9까지의 숫자만큼 불러온다
+#     print('i love you')
 #
 # range(5) # range 함수는 list를 작성하는 수고를 덜어 준다.
 # [0,1,2,3,4]
 
+a,b,c = map(int, input())
+d,e,f = map(int, input())
 
-
+print(a,b,c)
 
 
