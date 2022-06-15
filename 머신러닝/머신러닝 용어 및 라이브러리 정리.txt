@@ -1,0 +1,64 @@
+1. 모텔 : 
+머신러닝에서는 데이터들을 잘 구합하고 우리가 보지 못한 데이터를 잘 가장하는 것
+데이터의 패턴을 잘 학습한 모델이 좋은 모델 
+
+2. 특성 : 
+데이터를 설명하는 입력 변수
+Ex) 강아지 / 고양이 분류 프로그램 구성 할때 특성등을 넣어야 구분이 가능하다
+
+3. 레이블 : 
+예측하고자 하는 실제 항목 
+
+4. 추론 : 
+학습된 모델을 사용하여 새로운 데이터에 적용하여 예측 
+
+- Python 머신러닝 라이브러리 -
+
+5. Numpy : 
+행렬 다룰 때 사용하는 라이브러리 
+-> 코랩에서 보통 작성 
+Import lumpy as np
+data = [1,2,3,4,5]
+arr = np.array(data)
+
+arr.shape => 5
+
+arr.dtype = > int64
+
+6. Pandas :
+머신러닝 라이브러리 중 제일 많이 씀 (데이터 시각화 등)
+
+Import pandas as pd 
+pd.Series([1,2,3,4,5])
+-Series 인덱스가 있는 1차열 배열, pandas에서 제공
+
+students_name = ['Curry', 'Durant', 'Duncan', 'Green']
+math = [90, 80, 75, 23]
+
+result = pd.DataFrame({
+	"Name" : students_name,
+	"Math" : math
+
+}) -> 데이터 프레임 형성 
+
+result 하면 데이터 프레임으로 형성된 결과값이 나옴
+
+7. Matplotlib : 
+시각화 할 경우 유용한 라이브러리 
+
+import matplotlib.pyplot as pet
+
+plt.bar(students_name) - 위의 결과를 간단한 막대그래프로 시각화하는 것 
+
+8. Scikit - learn :
+지도 / 비지도 학습에서 모델을 만들 때 사용 
+
+9. NLTK :
+자연어 처리에서 사용 되는 라이브러리 이다
+
+자연어 처리는 대표적으로 챗봇 관련하여 되게 많이 사용된다
+And 번역 부분에서 많이 사용 됨
+
+
+
+
