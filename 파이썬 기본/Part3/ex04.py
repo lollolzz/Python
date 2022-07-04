@@ -27,3 +27,21 @@ print(message)
 
 message = "\"Yes,\" I can do it"
 print(message)
+
+# 특수문자 형태인 \n은 개행(Enter)을 하는 문자이다.
+message = "First\nSecond\nThird"
+print(message)
+
+# 특수문자 \t는 탭만큼 띄우는 문자이다.
+message = "c:\temp\name"
+print(message)
+
+# 위에서 살펴봤던 \t, \n, 이런 이스케이프 문자들의 기능을 제거를 시키기 위해서는
+# 문자열 시작 앞에 r을 붙여줌으로써
+message = r"c:\temp\name\a.mp3"
+print(message)
+
+# 문자열(영어나 한글 상관없음)의 길이를 알고자 한다면 len()함수를 이용한다.
+message = "신은혁"
+print("문자열의 길이 :",len(message))
+
