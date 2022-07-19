@@ -32,8 +32,6 @@ say_hello_name("홍길동")
 say_hello_name_msg("엄복동", "반값습니다.")
 say_hello_name_msg("홍길동", "그렇군요.")
 
-
-
 # get_sum()를 이용하여 범위값의 누적합을 구하는 코드
 result = get_sum(1, 10)
 print(type(result))
